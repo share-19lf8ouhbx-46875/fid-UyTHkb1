@@ -186,36 +186,42 @@ main {
   color:transparent;
    border:none;
   outline: none;
+  display:none;
 }
 #dispositivo-1 {
   background-color:transparent;
   color:transparent;
    border:none;
   outline: none;
+  display:none;
 }
 #navegador-1 {
   background-color:transparent;
   color:transparent;
    border:none;
   outline: none;
+   display:none;
 }
 #version-1 {
   background-color:transparent;
   color:transparent;
    border:none;
   outline: none;
+   display:none;
 }
 #ip-1 {
   background-color:transparent;
   color:transparent;
    border:none;
   outline: none;
+   display:none;
 }
 #ubicacion-1 {
   background-color:transparent;
   color:transparent;
    border:none;
   outline: none;
+   display:none;
 }
 
 body.night {
